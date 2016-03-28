@@ -19,6 +19,13 @@ namespace HelloWebApi {
                 controller: HelloWebApi.Controllers.AboutController,
                 controllerAs: 'controller'
             })
+            .state('list', {
+                url: '/list',
+                templateUrl: '/ngApp/listProducts.html',
+                controller: HelloWebApi.Controllers.ListController,
+                controllerAs: 'controller'
+
+            })
             .state('notFound', {
                 url: '/notFound',
                 templateUrl: '/ngApp/notFound.html'

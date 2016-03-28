@@ -13,9 +13,9 @@ namespace HelloWebApi.Controllers
 
         static List<Product> _products = new List<Product>() {
 
-                new Product { Id = 1, Name = "Milk", Price = 2.33m },
-                new Product { Id = 2, Name = "Cheese", Price = 5.44m },
-                new Product { Id = 3, Name = "Apples", Price = 2.50m }
+                new Product() { Id = 1, Name = "Milk", Price = 2.33m },
+                new Product() { Id = 2, Name = "Cheese", Price = 5.44m },
+                new Product() { Id = 3, Name = "Apples", Price = 2.50m }
         };
 
         [HttpGet]

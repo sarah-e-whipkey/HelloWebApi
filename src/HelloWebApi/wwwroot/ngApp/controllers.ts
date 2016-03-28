@@ -8,4 +8,16 @@ namespace HelloWebApi.Controllers {
         public message = 'Hello from the about page!';
     }
 
+    export class ListController {
+        public products;
+
+        constructor(private $http: ng.IHttpService) {
+            $http.get('/api/Products')
+                .then((response) => {
+                    this.products = response.data;
+                });
+        }
+
+    }
+
 }
