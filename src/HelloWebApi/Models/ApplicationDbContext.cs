@@ -18,5 +18,6 @@ namespace HelloWebApi.Models
             // Add your customizations after calling base.OnModelCreating(builder);
         }
         public DbSet<Product> Product { get; set; }
+        public DbSet<Movie> Movie { get; set; }
     }
 }

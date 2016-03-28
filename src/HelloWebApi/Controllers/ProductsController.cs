@@ -1,15 +1,16 @@
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.AspNet.Http;
+using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
-using Microsoft.Data.Entity;
 using HelloWebApi.Models;
 
 namespace HelloWebApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/Products")]
-    public class ProductsController : Controller {
+    public class ProductsController : Controller
+    {
 
         static List<Product> _products = new List<Product>() {
 
@@ -19,7 +20,8 @@ namespace HelloWebApi.Controllers
         };
 
         [HttpGet]
-        public IEnumerable<Product> Get() {
+        public IEnumerable<Product> Get()
+        {
             return _products;
         }
     }
